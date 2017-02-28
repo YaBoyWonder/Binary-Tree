@@ -43,7 +43,7 @@ Select any one
     case '1':
                   node *temp;
                   temp = new node;
-                  cout<<"  Enter the value of the node : ";
+                  cout<<"  Enter the value : ";
                   cin>>temp->value;
                   if(curr==NULL)
                    {
