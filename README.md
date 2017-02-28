@@ -1,5 +1,4 @@
 # Binary-Tree
-a binary tree implementation
 
 For people who dont know...
 <br></br>
@@ -10,4 +9,5 @@ a useful data structure for rapidly storing sorted data and rapidly retrieving s
 It is composed of parent nodes, or leaves, each of which stores data and also links to up to two 
 other child nodes (leaves) which can be visualized spatially as below the first node with one placed to 
 the left and with one placed to the right.
-<strong><a href="http://www.cprogramming.com/tutorial/lesson18.html">Source</a></strong>since they had a better explanation
+<br></br>
+<strong><a href="http://www.cprogramming.com/tutorial/lesson18.html">Source</a></strong> since they had a better explanation
