@@ -44,6 +44,7 @@ Select any one
                   node *temp;
                   temp = new node;
                   cout<<"  Enter the value : ";
+      //cout <<" Value NaN node_ 
                   cin>>temp->value;
                   if(curr==NULL)
                    {
