@@ -1,8 +1,3 @@
-#include <iostream.h>
-#include <conio.h>
-#include <stdlib.h>
-
-
 struct node
 {
 node *left;
