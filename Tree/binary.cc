@@ -58,11 +58,9 @@ Select any one
                   else
                     v=addnode(curr,temp);
                   if(v==1)
-                    cout<<"  The node is added to the left
-";
+                    cout<<"  The node is added to the left";
                   else if(v==2)
-                    cout<<"  The node is added to the right
-";
+                    cout<<"  The node is added to the right";
                   else if(v==3)
                     cout<<"  The same value exists
 ";
