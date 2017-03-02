@@ -26,9 +26,9 @@ Select any one
   cout<<"
 0 ->Exit
 ";
-  cout<<"1 ->Add node
+   cout<<"1 ->Add node
 ";
-  cout<<"2 ->Inorder traversal
+   cout<<"2 ->Inorder traversal
 ";
   cout<<"3 ->Preorder traversal
 ";
