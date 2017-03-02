@@ -10,9 +10,9 @@ It is composed of parent nodes, or leaves, each of which stores data and also li
 other child nodes (leaves) which can be visualized spatially as below the first node with one placed to 
 the left and with one placed to the right.
 <br></br>
-<strong>Simple example</strong>
+
 <img align="right" height="260" src="http://cslibrary.stanford.edu/110/binarytree.gif">
 
 
                 				     
-<strong><a href="http://www.cprogramming.com/tutorial/lesson18.html">Source</a></strong> since they had a better explanation
+<strong><a href="http://www.cprogramming.com/tutorial/lesson18.html">Source</a></strong> for better explanation
