@@ -11,13 +11,8 @@ other child nodes (leaves) which can be visualized spatially as below the first 
 the left and with one placed to the right.
 <br></br>
 <strong>Simple example</strong>
-                				       10
-						       <br>
-						     /    \
-						     	<br>
-						    6      14
-						    <br>
-						   / \    /  \
-						   <br>
-						  5   8  11  18
+<img align="right" height="260" src="http://cslibrary.stanford.edu/110/binarytree.gif">
+
+
+                				     
 <strong><a href="http://www.cprogramming.com/tutorial/lesson18.html">Source</a></strong> since they had a better explanation
