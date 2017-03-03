@@ -16,8 +16,8 @@ int postorder(node *);
 void main()
 {
   char c;
-  int v;
-  clrscr();
+    int v;
+    clrscr();
   do
   {
   cout<<"
