@@ -6,7 +6,9 @@ For people who dont know...
 <br></br>
 <strong>What is a binary tree?</strong>
 
-A data structure in which a record is linked to two successor records, usually referred to as the left branch when greater and the right when less than the previous record.
+A data structure in which a record is linked to two successor records, usually referred to 
+<br></br>
+as the left branch when greater and the right when less than the previous record.
 <br></br>
 
 <img align="right" height="260" src="http://cslibrary.stanford.edu/110/binarytree.gif">
