@@ -173,45 +173,4 @@ void LuaObjcBridge::pushValue(lua_State *L, void *val)
     {
         lua_pushnil(L);
     }
-    else if ([oval isKindOfClass:[NSNumber class]])
-    {
-        NSNumber *number = (NSNumber *)oval;
-        const char *numberType = [number objCType];
-        if (strcmp(numberType, @encode(BOOL)) == 0)
-        {
-            lua_pushboolean(L, [number boolValue]);
-        }
-        else if (strcmp(numberType, @encode(int)) == 0)
-        {
-            lua_pushinteger(L, [number intValue]);
-        }
-        else
-        {
-            lua_pushnumber(L, [number floatValue]);
-        }
-    }
-    else if ([oval isKindOfClass:[NSString class]])
-    {
-        lua_pushstring(L, [oval cStringUsingEncoding:NSUTF8StringEncoding]);
-    }
-    else if ([oval isKindOfClass:[NSDictionary class]])
-    {
-        lua_newtable(L);
-        
-        for (id key in oval)
-        {
-            const char *key_ = [[NSString stringWithFormat:@"%@", key] cStringUsingEncoding:NSUTF8StringEncoding];
-            lua_pushstring(L, key_);
-            pushValue(L, [oval objectForKey:key]);
-            lua_rawset(L, -3);
-        }
-        
-        return;
-    }
-    else
-    {
-        lua_pushstring(L, [[NSString stringWithFormat:@"%@", oval] cStringUsingEncoding:NSUTF8StringEncoding]);
-    }
-}
-
-NS_CC_END
+  
