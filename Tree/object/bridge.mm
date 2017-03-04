@@ -1,23 +1,3 @@
-include "scripting/lua-bindings/manual/platform/ios/CCLuaObjcBridge.h"
-#include <Foundation/Foundation.h>
-
-NS_CC_BEGIN
-
-void LuaObjcBridge::luaopen_luaoc(lua_State *L)
-{
-    s_luaState = L;
-    lua_newtable(L);
-    lua_pushstring(L, "callStaticMethod");
-    lua_pushcfunction(L, LuaObjcBridge::callObjcStaticMethod);
-    lua_rawset(L, -3);
-    lua_setglobal(L, "LuaObjcBridge");
-}
-
-/**
- className
- methodName
- args
- */
 int LuaObjcBridge::callObjcStaticMethod(lua_State *L)
 {
     if (lua_gettop(L) != 3 || !lua_isstring(L, -3) || !lua_isstring(L, -2))
