@@ -78,43 +78,5 @@ int LuaObjcBridge::callObjcStaticMethod(lua_State *L)
         NSUInteger returnLength = [methodSig methodReturnLength];
         const char *returnType = [methodSig methodReturnType];
         
-        if (hasArguments)
-        {
-            NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-            lua_pushnil(L);
-            while (lua_next(L, -2))
-            {
-                NSString *key = [NSString stringWithCString:lua_tostring(L, -2) encoding:NSUTF8StringEncoding];
-                
-                switch (lua_type(L, -1))
-                {
-                    case LUA_TNUMBER:
-                        [dict setObject:[NSNumber numberWithFloat:lua_tonumber(L, -1)] forKey:key];
-                        break;
-                        
-                    case LUA_TBOOLEAN:
-                        [dict setObject:[NSNumber numberWithBool:lua_toboolean(L, -1)] forKey:key];
-                        break;
-                        
-                    case LUA_TSTRING:
-                        [dict setObject:[NSString stringWithCString:lua_tostring(L, -1) encoding:NSUTF8StringEncoding]
-                                 forKey:key];
-                        break;
-                        
-                    case LUA_TFUNCTION:
-                        int functionId = retainLuaFunction(L, -1, NULL);
-                        [dict setObject:[NSNumber numberWithInt:functionId] forKey:key];
-                        break;
-                }
-                
-                lua_pop(L, 1);
-            }
-            
-            [invocation setArgument:&dict atIndex:2];
-            [invocation invoke];
-        }
-        else
-        {
-            [invocation invoke];
-        }
+    
    
