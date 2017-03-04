@@ -1,5 +1,5 @@
 ![Language](https://img.shields.io/badge/language-C%2B%2B-ff69b4.svg)
-![Language](https://img.shields.io/badge/language-C%2B%2B-EC5757.svg)
+
 # Binary-Tree
 
 For people who dont know...
