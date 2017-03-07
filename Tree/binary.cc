@@ -125,7 +125,7 @@ int addnode(node *fcurr, node *fnew )
                 {
                 fcurr->right = fnew;
                   (fcurr->right)->left=NULL;
-                (fcurr->right)->right=NULL;
+                  (fcurr->right)->right=NULL;
                 return 2;
                 }
      }
