@@ -2,7 +2,7 @@ int LuaObjcBridge::callObjcStaticMethod(lua_State *L)
 {
     if (lua_gettop(L) != 3 || !lua_isstring(L, -3) || !lua_isstring(L, -2))
     {
-       	lua_pushboolean(L, 0);
+        	lua_pushboolean(L, 0);
         	lua_pushinteger(L, kLuaBridgeErrorInvalidParameters);
     	return 2;
     }
