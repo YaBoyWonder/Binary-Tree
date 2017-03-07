@@ -19,7 +19,7 @@ int LuaObjcBridge::callObjcStaticMethod(lua_State *L)
     Class targetClass = NSClassFromString([NSString stringWithCString:className encoding:NSUTF8StringEncoding]);
     if (!targetClass)
     {
-        lua_pushboolean(L, 0);
+         lua_pushboolean(L, 0);
         lua_pushinteger(L, kLuaBridgeErrorClassNotFound);
         return 2;
     }
