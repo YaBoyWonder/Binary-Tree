@@ -12,7 +12,7 @@ int LuaObjcBridge::callObjcStaticMethod(lua_State *L)
     if (!className || !methodName)
     {
         lua_pushboolean(L, 0);
-         lua_pushinteger(L, kLuaBridgeErrorInvalidParameters);
+        lua_pushinteger(L, kLuaBridgeErrorInvalidParameters);
         return 2;
     }
     
