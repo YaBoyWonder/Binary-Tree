@@ -76,7 +76,7 @@ The tree is empty
                    v=preorder(curr);
                    if(v==0)
                    cout<<"   
-The tree is empty
+empt.
 ";
                    break;
     case '4':
