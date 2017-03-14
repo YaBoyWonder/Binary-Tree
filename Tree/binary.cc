@@ -1,7 +1,7 @@
 struct node
 {
 node *left;
-  int value;
+int value;
 node *right;
 };
 node *curr=NULL;
