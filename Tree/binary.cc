@@ -17,7 +17,7 @@ void main()
 {
   char c;
     int v;
-    clrscr();
+   clrscr();
   do
   {
   cout<<"
