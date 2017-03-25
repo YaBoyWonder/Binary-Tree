@@ -8,7 +8,7 @@ node *curr=NULL;
 
 
  int addnode(node *, node *);
- int inorder(node *);
+  int inorder(node *);
   int preorder(node *);
   int postorder(node *);
 
