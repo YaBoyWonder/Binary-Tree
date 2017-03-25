@@ -10,7 +10,7 @@ Status EnsureMemoryTypes(DeviceType device_type, const string& device_name,
 Status MemoryTypeForOutput(DeviceType device_type, const Graph* g,
                           
                            
-             const Node* n, int index, MemoryType* memory_type);
+            const Node* n, int index, MemoryType* memory_type);
 
 }  
 
