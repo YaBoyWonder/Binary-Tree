@@ -17,7 +17,7 @@ int postorder(node *);
 void main()
 {
   char c;
-    int v;
+   int v;
    clrscr();
   do
   {
