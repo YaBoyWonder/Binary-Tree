@@ -19,7 +19,7 @@ void main()
   char c;
    int v;
    clrscr();
-  do
+ do
   {
   cout<<"
 Select any one
