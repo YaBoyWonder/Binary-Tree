@@ -11,7 +11,7 @@ node *curr=NULL;
    int inorder(node *);
    int preorder(node *);
  
-int postorder(node *);
+ int postorder(node *);
 
 
 void main()
