@@ -6,7 +6,6 @@ node *right;
 };
 node *curr=NULL;
 
-
  int addnode(node *, node *);
  int inorder(node *);
  int preorder(node *);
