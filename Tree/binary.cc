@@ -11,7 +11,6 @@ int inorder(node *);
 int preorder(node *);
 int postorder(node *);
 
-
 void main()
 {
   char c;
